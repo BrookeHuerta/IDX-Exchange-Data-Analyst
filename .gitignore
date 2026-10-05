@@ -1,0 +1,5 @@
+csv/
+*.csv
+.DS_Store
+.vscode/
+notes.txt
