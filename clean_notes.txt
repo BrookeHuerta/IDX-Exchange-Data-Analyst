@@ -1,0 +1,23 @@
+Starting rows: 495321
+Starting columns: 84
+
+CloseDate:
+  Date type: datetime64[ns]
+  Failed conversions: 0
+  Total missing dates: 0
+
+PurchaseContractDate:
+  Date type: datetime64[ns]
+  Failed conversions: 0
+  Total missing dates: 197
+
+ListingContractDate:
+  Date type: datetime64[ns]
+  Failed conversions: 0
+  Total missing dates: 1
+
+ContractStatusChangeDate:
+  Date type: datetime64[ns]
+  Failed conversions: 0
+  Total missing dates: 594
+  
