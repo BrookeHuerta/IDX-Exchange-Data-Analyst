@@ -20,4 +20,233 @@ ContractStatusChangeDate:
   Date type: datetime64[ns]
   Failed conversions: 0
   Total missing dates: 594
-  
+
+Date consistency flag counts:
+  listing_after_close_flag: 75
+  purchase_after_close_flag: 243
+  negative_timeline_flag: 316
+
+Latitude:
+  Data type: float64
+  Failed conversions: 0
+
+Longitude:
+  Data type: float64
+  Failed conversions: 0
+
+Geographic data quality flag counts:
+  missing_coordinates_flag: 4796
+  zero_coordinates_flag: 46
+  positive_longitude_flag: 35
+  implausible_coordinates_flag: 2
+  outside_california_bounds_flag: 117
+Records with at least one geographic flag: 4913
+StateOrProvince
+CA     495288
+AZ         10
+OS          4
+NaN         2
+TX          2
+NV          2
+CO          2
+FL          2
+TN          1
+VA          1
+AR          1
+NY          1
+MO          1
+ME          1
+GA          1
+ID          1
+KS          1
+Name: count, dtype: int64
+
+ClosePrice:
+  Data type: float64
+  Failed conversions: 0
+  Total missing values: 2
+
+ListPrice:
+  Data type: float64
+  Failed conversions: 0
+  Total missing values: 0
+
+OriginalListPrice:
+  Data type: float64
+  Failed conversions: 0
+  Total missing values: 902
+
+LivingArea:
+  Data type: float64
+  Failed conversions: 0
+  Total missing values: 274
+
+LotSizeAcres:
+  Data type: float64
+  Failed conversions: 0
+  Total missing values: 37982
+
+BedroomsTotal:
+  Data type: float64
+  Failed conversions: 0
+  Total missing values: 13
+
+BathroomsTotalInteger:
+  Data type: float64
+  Failed conversions: 0
+  Total missing values: 71
+
+DaysOnMarket:
+  Data type: int64
+  Failed conversions: 0
+  Total missing values: 0
+
+YearBuilt:
+  Data type: float64
+  Failed conversions: 0
+  Total missing values: 443
+
+Invalid numeric value flag counts:
+  invalid_close_price_flag: 1
+  invalid_living_area_flag: 177
+  negative_days_on_market_flag: 56
+  negative_bedrooms_flag: 0
+  negative_bathrooms_flag: 0
+Records with at least one invalid numeric value: 234
+
+Completely empty columns:
+['FireplacesTotal', 'AboveGradeFinishedArea', 'TaxAnnualAmount', 'TaxYear', 'ElementarySchoolDistrict', 'BusinessType', 'CoveredSpaces', 'MiddleOrJuniorSchoolDistrict']
+Number of completely empty columns: 8
+Columns removed: 8
+Remaining columns: 90
+Rows after removing empty columns: 495321
+
+Remaining column names:
+['Flooring', 'ViewYN', 'WaterfrontYN', 'BasementYN', 'PoolPrivateYN', 'OriginalListPrice', 'ListingKey', 'ListAgentEmail', 'CloseDate', 'ClosePrice', 'ListAgentFirstName', 'ListAgentLastName', 'Latitude', 'Longitude', 'UnparsedAddress', 'PropertyType', 'LivingArea', 'ListPrice', 'DaysOnMarket', 'ListOfficeName', 'BuyerOfficeName', 'CoListOfficeName', 'ListAgentFullName', 'CoListAgentFirstName', 'CoListAgentLastName', 'BuyerAgentMlsId', 'BuyerAgentFirstName', 'BuyerAgentLastName', 'AssociationFeeFrequency', 'ListingKeyNumeric', 'MLSAreaMajor', 'CountyOrParish', 'MlsStatus', 'ElementarySchool', 'AttachedGarageYN', 'ParkingTotal', 'BuilderName', 'PropertySubType', 'LotSizeAcres', 'SubdivisionName', 'BuyerOfficeAOR', 'YearBuilt', 'BuyerAgencyCompensationType', 'StreetNumberNumeric', 'ListingId', 'BathroomsTotalInteger', 'City', 'BuyerAgencyCompensation', 'BuildingAreaTotal', 'BedroomsTotal', 'ContractStatusChangeDate', 'CoBuyerAgentFirstName', 'PurchaseContractDate', 'ListingContractDate', 'BelowGradeFinishedArea', 'StateOrProvince', 'MiddleOrJuniorSchool', 'FireplaceYN', 'Stories', 'HighSchool', 'Levels', 'LotSizeDimensions', 'LotSizeArea', 'MainLevelBedrooms', 'NewConstructionYN', 'GarageSpaces', 'HighSchoolDistrict', 'PostalCode', 'AssociationFee', 'LotSizeSquareFeet', 'latfilled', 'lonfilled', 'BuyerAgentAOR', 'ListAgentAOR', 'OriginatingSystemName', 'OriginatingSystemSubName', 'listing_after_close_flag', 'purchase_after_close_flag', 'negative_timeline_flag', 'missing_coordinates_flag', 'zero_coordinates_flag', 'positive_longitude_flag', 'implausible_coordinates_flag', 'outside_california_bounds_flag', 'out_of_state_flag', 'invalid_close_price_flag', 'invalid_living_area_flag', 'negative_days_on_market_flag', 'negative_bedrooms_flag', 'negative_bathrooms_flag']
+
+Missing-value summary:
+                             Missing count  Missing percent
+WaterfrontYN                        495010            99.94
+BelowGradeFinishedArea              492305            99.39
+BasementYN                          485598            98.04
+BuilderName                         471244            95.14
+LotSizeDimensions                   471145            95.12
+BuildingAreaTotal                   460555            92.98
+CoBuyerAgentFirstName               449708            90.79
+BuyerAgencyCompensation             438006            88.43
+BuyerAgencyCompensationType         437993            88.43
+ElementarySchool                    429696            86.75
+MiddleOrJuniorSchool                429217            86.65
+HighSchool                          409496            82.67
+latfilled                           387164            78.16
+lonfilled                           387164            78.16
+CoListAgentFirstName                381448            77.01
+CoListAgentLastName                 381150            76.95
+CoListOfficeName                    378280            76.37
+OriginatingSystemName               369545            74.61
+OriginatingSystemSubName            369545            74.61
+SubdivisionName                     310117            62.61
+AssociationFeeFrequency             289028            58.35
+MainLevelBedrooms                   207348            41.86
+Flooring                            177995            35.94
+HighSchoolDistrict                  136974            27.65
+AssociationFee                      113240            22.86
+ListAgentEmail                       82332            16.62
+AttachedGarageYN                     75663            15.28
+Stories                              74750            15.09
+BuyerAgentAOR                        70346            14.20
+MLSAreaMajor                         67270            13.58
+ListAgentAOR                         57394            11.59
+Levels                               46138             9.31
+ViewYN                               42922             8.67
+PoolPrivateYN                        41394             8.36
+LotSizeAcres                         37982             7.67
+LotSizeSquareFeet                    37527             7.58
+LotSizeArea                          37381             7.55
+NewConstructionYN                    37185             7.51
+BuyerOfficeAOR                       31891             6.44
+GarageSpaces                         21198             4.28
+BuyerOfficeName                       7684             1.55
+Longitude                             4796             0.97
+Latitude                              4796             0.97
+ListAgentFirstName                    3580             0.72
+BuyerAgentFirstName                   2266             0.46
+PropertySubType                        923             0.19
+OriginalListPrice                      902             0.18
+BuyerAgentMlsId                        679             0.14
+StreetNumberNumeric                    641             0.13
+ContractStatusChangeDate               594             0.12
+UnparsedAddress                        532             0.11
+YearBuilt                              443             0.09
+ParkingTotal                           430             0.09
+FireplaceYN                            389             0.08
+City                                   322             0.07
+LivingArea                             274             0.06
+BuyerAgentLastName                     210             0.04
+PurchaseContractDate                   197             0.04
+ListAgentFullName                      111             0.02
+BathroomsTotalInteger                   71             0.01
+ListAgentLastName                       46             0.01
+BedroomsTotal                           13             0.00
+PostalCode                               4             0.00
+ClosePrice                               2             0.00
+StateOrProvince                          2             0.00
+ListingContractDate                      1             0.00
+
+Key missing-value flag counts:
+  Missing ClosePrice: 2
+  Missing LivingArea: 274
+
+Final dimensions:
+  Starting rows: 495321
+  Final rows: 495321
+  Rows removed: 0
+  Starting columns: 84
+  Final columns: 92
+
+Final date types:
+CloseDate                   datetime64[ns]
+PurchaseContractDate        datetime64[ns]
+ListingContractDate         datetime64[ns]
+ContractStatusChangeDate    datetime64[ns]
+
+Final numeric types:
+ClosePrice               float64
+ListPrice                float64
+OriginalListPrice        float64
+LivingArea               float64
+LotSizeAcres             float64
+BedroomsTotal            float64
+BathroomsTotalInteger    float64
+DaysOnMarket               int64
+YearBuilt                float64
+Latitude                 float64
+Longitude                float64
+
+Final date consistency flag counts:
+listing_after_close_flag      75
+purchase_after_close_flag    243
+negative_timeline_flag       316
+
+Final geographic flag counts:
+missing_coordinates_flag          4796
+zero_coordinates_flag               46
+positive_longitude_flag             35
+implausible_coordinates_flag         2
+outside_california_bounds_flag     117
+Records with at least one geographic flag: 4913
+
+Final invalid numeric flag counts:
+invalid_close_price_flag          1
+invalid_living_area_flag        177
+negative_days_on_market_flag     56
+negative_bedrooms_flag            0
+negative_bathrooms_flag           0
+Records with at least one invalid numeric value: 234
+
+Key missing-value flag counts:
+missing_close_price_flag      2
+missing_living_area_flag    274
+
+Removed empty columns: ['FireplacesTotal', 'AboveGradeFinishedArea', 'TaxAnnualAmount', 'TaxYear', 'ElementarySchoolDistrict', 'BusinessType', 'CoveredSpaces', 'MiddleOrJuniorSchoolDistrict']
+Missing-value policy: retained as unknown; no imputation.
