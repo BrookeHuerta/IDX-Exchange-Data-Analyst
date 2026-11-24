@@ -1,0 +1,60 @@
+Before cleaning:
+Numeric field summary:
+         ClosePrice    LivingArea   DaysOnMarket
+count  4.953190e+05  4.950470e+05  495321.000000
+mean   1.188497e+06  1.902632e+03      37.642593
+std    5.779810e+06  2.421032e+04      53.593913
+min    0.000000e+00  0.000000e+00    -288.000000
+1%     2.000000e+05  6.060000e+02       0.000000
+25%    5.750000e+05  1.250000e+03       8.000000
+50%    8.250000e+05  1.648000e+03      19.000000
+75%    1.300000e+06  2.227000e+03      49.000000
+99%    5.600000e+06  5.300000e+03     235.000000
+max    9.895000e+08  1.702132e+07   12430.000000
+
+Invaild and missing-value counts:
+invalid_close_price_flag          1
+invalid_living_area_flag        177
+negative_days_on_market_flag     56
+missing_close_price_flag          2
+missing_living_area_flag        274
+missing_days_on_market_flag       0
+dtype: int64
+
+ClosePrice:
+  Lower boundary: -512,500.00
+  Upper boundary: 2,387,500.00
+  Outliers flagged: 37,066
+
+LivingArea:
+  Lower boundary: -215.50
+  Upper boundary: 3,692.50
+  Outliers flagged: 21,668
+
+DaysOnMarket:
+  Lower boundary: -53.50
+  Upper boundary: 110.50
+  Outliers flagged: 36,786
+
+Rows before filtering: 495321
+Rows after filtering: 418138
+Rows excluded: 77183
+
+Dataset size comparison:
+Before filtering: 495,321
+After filtering: 418,138
+Rows excluded: 77,183
+Percentage excluded: 15.58%
+
+Median comparison:
+              MedianBefore  MedianAfter   Change
+ClosePrice        825000.0     785000.0 -40000.0
+LivingArea          1648.0       1574.0    -74.0
+DaysOnMarket          19.0         16.0     -3.0
+
+Written Comparison: 
+Filtering reduced the dataset from 495,321 to 418,138 
+residential sales, removing 77,183 records (15.58%). 
+The median sale price decreased from $825,000 to $785,000, 
+the median living area decreased from 1,648 to 1,574 square feet, 
+and the median days on market decreased from 19 to 16 days.

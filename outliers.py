@@ -13,8 +13,6 @@ df = pd.read_csv(input_file, low_memory=False)
 
 starting_rows = len(df)
 
-
-
 """
 --------------------------------------------------------------------------------
 2. Summarize numeric fields
@@ -35,8 +33,6 @@ print(
         percentiles=[0.01, 0.25, 0.50, 0.75, 0.99]
     ).to_string()
 )
-
-
 
 """
 --------------------------------------------------------------------------------
@@ -64,9 +60,6 @@ flag_columns = [
 print("\nInvaild and missing-value counts:")
 print(df[flag_columns].sum())
 
-
-
-
 """
 --------------------------------------------------------------------------------
 4. Add IQR outlier flags
@@ -91,8 +84,6 @@ for column in numeric_columns:
     print(f"  Upper boundary: {upper:,.2f}")
     print(f"  Outliers flagged: {df[flag_column].sum():,}")
 
-
-
 """
 --------------------------------------------------------------------------------
 5. Create separate filtered dataset
@@ -110,8 +101,6 @@ filtered_df = df.loc[~exclude_row].copy()
 print("\nRows before filtering:", len(df))
 print("Rows after filtering:", len(filtered_df))
 print("Rows excluded:", exclude_row.sum())
-
-
 
 """
 --------------------------------------------------------------------------------
@@ -140,10 +129,10 @@ median_comparison["Change"] = (
 print("\nMedian comparison:")
 print(median_comparison.round(2).to_string())
 
-
-
 """
 --------------------------------------------------------------------------------
 7. Save datasets + written comparison
 --------------------------------------------------------------------------------
 """
+df.to_csv(csv_dir / "sold_residential_flagged.csv", index=False)
+filtered_df.to_csv(csv_dir / "sold_residential_filtered.csv", index=False)
